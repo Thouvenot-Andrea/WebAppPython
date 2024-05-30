@@ -10,6 +10,10 @@
     <input type="number" id="budget" name="budget" required><br><br>
     <label for="nombre_employe">Nombre d'employés:</label>
     <input type="number" id="nombre_employe" name="nombre_employe" required><br><br>
+</form>
+<form method="post" action="">
+    <label for="nombre_employe">Nom d'employés:</label>
+    <input type="number" id="employe" name="employe" required><br><br>
     <input type="submit" value="Soumettre">
 </form>
 </body>
