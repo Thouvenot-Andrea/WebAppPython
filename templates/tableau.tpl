@@ -13,7 +13,7 @@
 </form>
 <form method="post" action="">
     <label for="nombre_employe">Nom d'employés:</label>
-    <input type="number" id="employe" name="employe" required><br><br>
+    <input type="text" id="employe" name="employe" required><br><br>
     <input type="submit" value="Soumettre">
 </form>
 </body>
