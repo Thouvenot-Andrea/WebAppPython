@@ -4,7 +4,7 @@ from bottle import default_app, route
 
 @route('/')
 def hello_world():
-    return 'Hello from Python1'
+    return 'Hello from Python'
 
 
 application = default_app()
