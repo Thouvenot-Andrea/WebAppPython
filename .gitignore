@@ -3,3 +3,6 @@ __pycache__
 /.idea/
 access.py
 deploy.py
+gitpush.sh
+test_bottle_app.py
+testpull.py
