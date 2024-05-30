@@ -15,7 +15,7 @@ def hello_world():
 def nom_personne():
     name = [request.forms.get("employe")]
     jours = request.forms.get("jours")
-    return template('templates/make_tableau', names=name, jours=jours)
+    return template('make_tableau', names=name, jours=jours)
 
 
 application = default_app()
