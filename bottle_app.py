@@ -5,7 +5,6 @@ from bottle import default_app, route, template, request, run
 @route('/')
 def hello_world():
     return template('tableau')
-    # return template('templates/tableau')
 
 
 # @route('/tableau', method = 'POST')
@@ -14,10 +13,9 @@ def hello_world():
 
 @route('/', method="POST")
 def nom_personne():
-    name = request.forms.get("employe")
-    return name
-
-# run();
+    name = [request.forms.get("employe")]
+    jours = request.forms.get("jours")
+    return template('templates/make_tableau', names=name, jours=jours)
 
 
 application = default_app()

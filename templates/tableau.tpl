@@ -4,24 +4,16 @@
     <title>Calcul du taux horaire</title>
 </head>
 <body>
-<h1>Calcul du taux horaire par employé</h1>
-<!--<form method="post" action="">-->
-<!--    <label for="budget">Budget total:</label>-->
-<!--    <input type="number" id="budget" name="budget" required><br><br>-->
-<!--    <label for="nombre_employe">Nombre d'employés:</label>-->
-<!--    <input type="number" id="nombre_employe" name="nombre_employe" required><br><br>-->
-<!--</form>-->
-<!--<form method="post" action="">-->
-<!--    <label for="nombre_employe">Nom d'employés:</label>-->
-<!--    <input type="text" id="employe" name="employe" required><br><br>-->
-<!--    <input type="submit" value="Soumettre">-->
-<!--</form>-->
-
-<form method="post" action="">
+<h1>Employés</h1>
+<form method="post" action="/" target="result_frame">
     <label for="employe">Nom d'employés:</label>
-    <input type="text" id="employe" name="employe" required><br><br>
+    <input type="text" id="employe" name="employe" required><br>
+    <label for="jours">Jours travaillés :</label>
+    <input type="text" id="jours" name="jours" required><br>
     <input type="submit" value="Soumettre">
 </form>
+<iframe name="result_frame" style="width:100%; height:300px; border:none;"></iframe>
 
 </body>
 </html>
+
