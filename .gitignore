@@ -1,2 +1,5 @@
 __pycache__
 
+/.idea/
+access.py
+deploy.py
