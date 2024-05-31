@@ -15,9 +15,10 @@ def hello_world():
 def nom_personne():
     name = [request.forms.get("employe")]
     jours = int(request.forms.get("jours"))
-    taux = int(request.forms.get("taux"))
+    taux = float(request.forms.get("taux"))
     salaire = jours*taux
-    return template('make_tableau', names=name, jours=jours, taux=taux, salaire=salaire)
+    salaire_arroundi = round(salaire, 2)
+    return template('make_tableau', names=name, jours=jours, taux=taux, salaire=salaire_arroundi)
 
 
 application = default_app()
