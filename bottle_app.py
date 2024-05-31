@@ -16,7 +16,7 @@ def nom_personne():
     name = [request.forms.get("employe")]
     jours = request.forms.get("jours")
     taux = request.forms.get("taux")
-    return template('templates/make_tableau', names=name, jours=jours, taux=taux)
+    return template('make_tableau', names=name, jours=jours, taux=taux)
 
 
 application = default_app()
