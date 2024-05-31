@@ -5,6 +5,7 @@
 </head>
 <body>
 <h1>Employés</h1>
+<h3>Budget = {{budget}}€</h3>
 <form method="post" action="/" target="result_frame">
     <label for="employe">Nom d'employés:</label>
     <input type="text" id="employe" name="employe" required><br>
