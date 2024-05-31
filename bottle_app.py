@@ -14,9 +14,10 @@ def hello_world():
 @route('/', method="POST")
 def nom_personne():
     name = [request.forms.get("employe")]
-    jours = request.forms.get("jours")
-    taux = request.forms.get("taux")
-    return template('make_tableau', names=name, jours=jours, taux=taux)
+    jours = int(request.forms.get("jours"))
+    taux = int(request.forms.get("taux"))
+    salaire = jours*taux
+    return template('make_tableau', names=name, jours=jours, taux=taux, salaire=salaire)
 
 
 application = default_app()
